@@ -1,0 +1,26 @@
+{
+  "name": "mineral-backend",
+  "version": "1.0.0",
+  "description": "Backend of Mineral",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "MERN"
+  ],
+  "author": "Alejandro Lopez de Guereñu",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2" 
+  },
+  "devDependencies": {
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.20"
+  }
+}
