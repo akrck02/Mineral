@@ -1,6 +1,7 @@
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
+import { IProject } from "../interface/IProject";
 
-const projectSchema = mongoose.Schema({
+const projectSchema = new Schema<IProject>({
     name: {
         type: String,
         trim: true,
@@ -22,9 +23,6 @@ const projectSchema = mongoose.Schema({
             ref: "User"
         }
     ]
-},
-{
-    timestamp: true
 });
 
 const Project = mongoose.model('Project', projectSchema);

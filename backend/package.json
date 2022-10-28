@@ -2,13 +2,13 @@
   "name": "mineral-backend",
   "version": "1.0.0",
   "description": "Backend of Mineral",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "test",
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "compile-server": "tsc --project ."
+    "compile": "tsc --project .",
+    "compile-watch": "tsc --project . -w"
   },
   "keywords": [
     "MERN"

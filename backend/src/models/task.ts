@@ -1,6 +1,7 @@
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
+import { ITaskDocument } from "../interface/ITask";
 
-const taskSchema = mongoose.Schema({
+const taskSchema = new Schema<ITaskDocument>({
     name: {
         type: String,
         trim: true,
@@ -29,10 +30,7 @@ const taskSchema = mongoose.Schema({
     endDate: {
         type: Date
     }
-},
-{
-    timeStamp: true
-});
+},);
 
 const Task = mongoose.model('Task', taskSchema);
 

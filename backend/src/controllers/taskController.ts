@@ -1,24 +1,25 @@
-import Task from "../src/models/task.js";
+import { Request, Response } from "express";
 
-const createTask = async (req, res) => {
+export default class TaskController {
+
+    static async createTask(req : Request, res : Response) {
+
+    }
+    
+    static async removeTask (req : Request, res : Response) {
+    
+    }
+    
+    static async assignTask (req : Request, res : Response) {
+    
+    }
+    
+    static async unassingTask (req : Request, res : Response) {
+    
+    }
+    
+    static async  updateTask (req : Request, res : Response) {
+    
+    }
 
 }
-
-const removeTask = async (req, res) => {
-
-}
-
-const assignTask = async (req, res) => {
-
-}
-
-const unassingTask = async (req, res) => {
-
-}
-
-const updateTask = async (req, res) => {
-
-}
-
-
-export {createTask, removeTask, assignTask, unassingTask, updateTask};

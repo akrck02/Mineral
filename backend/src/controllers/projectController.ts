@@ -1,19 +1,20 @@
-import Project from "../src/models/project.js";
+export default class ProjectController {
 
-const createProject = async (req, res) => {
+    async createProject(req : Request, res : Response) {
+
+    }
+    
+    async removeProject(req : Request, res : Response) {
+    
+    }
+    
+    async updateProject (req : Request, res : Response) {
+    
+    }
+    
+    async findProjects (req : Request, res : Response) {
+    
+    }
+
 
 }
-
-const removeProject = async (req, res) => {
-
-}
-
-const updateProject = async (req, res) => {
-
-}
-
-const findProjects = async (req, res) => {
-
-}
-
-export {createProject, removeProject, updateProject};
